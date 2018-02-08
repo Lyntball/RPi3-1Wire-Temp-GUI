@@ -70,7 +70,7 @@ def SystemCheck():
                 dsktp.writelines('[Desktop Entry] \nComment=Display Temp'+
                                   '\nTerminal=false \nName=Temp\nExec=/home/pi/.TempReading.py'+
                                   '\nType=Application\nIcon=preferences-desktop-display\nNoDisplay=false\nCategories=System')
-            os.system('chmod +x /home/pi/.TempReading.py')
+            os.system('sudo chmod +x /home/pi/.TempReading.py')
             return -1
     if os.path.isdir('/home/pi'):
         print os.name
